@@ -1,0 +1,27 @@
+<section [ngClass]="slide.checked ? 'unicorn-dark-theme' : ''">
+  <div class="grey">
+    <mat-slide-toggle #slide (click)="setSlide(slide.checked)" color="primary">Click to changed theme.</mat-slide-toggle>
+  </div>
+    <app-menu [slide]="slide"></app-menu>
+    <router-outlet></router-outlet>
+    <!-- <div class="backgroundTheme bodyContent space-padding">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell--span-12">
+          <img class="car" [src]="slide.checked ? '../assets/images/audi-car.png' : '../assets/images/volks-car.png'" [alt]="slide.checked ? 'Carro Audi' : 'Carro Volks'"/>
+          <mat-card>
+            <div>
+            <button mat-raised-button color="primary"> 
+              Primary
+            </button> 
+            <button mat-raised-button color="accent"> 
+              Accent 
+            </button> 
+            <button mat-raised-button color="warn"> 
+              Warn 
+            </button>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div> -->
+  </section>

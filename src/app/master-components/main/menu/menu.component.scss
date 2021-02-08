@@ -1,0 +1,34 @@
+.header {
+    position: relative;
+    height: 50pt;
+    padding: 0% 10%;
+    .borderImage { //borda imagem do header
+        position: absolute;
+        background-color: #FFFFFF;
+        padding: 5px 15px;
+        border-radius: 10px;
+        z-index: 999;
+    }
+    .logo {
+        width: 100%;
+    }
+
+    li {
+        width: auto;
+        height: 50pt;
+        cursor: pointer;
+        span {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            margin-left: 10pt;
+            color: #444953;
+            &.grey {
+                color: #A5AAB4
+            }
+        }
+        &:hover {
+            border-bottom: 3px solid #1D6BA6;
+            border-width: 50%;
+        }
+    }
+}
